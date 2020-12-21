@@ -1,0 +1,144 @@
+/* 
+  CSE183 Assignment 2
+
+  CSS for Stretch Requirement using two or all of the following:
+
+    Gradients
+    Transtitions
+    Animations
+
+  Partial credit for using just one.
+*/
+
+/* I applied Transistions and Gradients to the basic.css (copied the code here and added more */
+
+.C {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  transition-property: width height;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  background-image: linear-gradient(to bottom right, yellow, orange);
+ 
+}
+
+.C:hover {
+  width: 200px;
+  height: 50px;
+}
+
+.S {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  transition-property: width height;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  background-image: linear-gradient(to bottom right, orange, red);
+}
+
+.S:hover {
+  width: 200px;
+  height: 50px;
+}
+
+.E {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: orange;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  transition-property: width height;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  background-image: linear-gradient(to bottom right, red, pink);
+}
+
+.E:hover {
+  width: 300px;
+  height: 100px;
+}
+
+.one {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: orange;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  transition-property: width height;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  background-image: linear-gradient(to bottom right, pink, purple);
+}
+
+.one:hover {
+  width: 300px;
+  height: 100px;
+}
+
+.eight {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: red;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  transition-property: width height;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  background-image: linear-gradient(to bottom right, purple, blue);
+}
+
+.eight:hover {
+  width: 400px;
+  height: 150px;
+}
+
+.three {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: yellow;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  transition-property: width height;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  background-image: linear-gradient(to bottom right, blue, aqua);
+}
+
+.three:hover {
+  width: 400px;
+  height: 150px;
+}

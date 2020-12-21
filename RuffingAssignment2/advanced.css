@@ -1,0 +1,122 @@
+/* 
+  CSE183 Assignment 2
+
+  CSS for Advanced Requirement 
+*/
+
+.C {
+  display: inline-flex;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 60px;
+  color: white;
+  background-color: navy;
+  width: 180px;
+  height: 180px;
+}
+
+.C:hover {
+  background-color: white;
+  color: navy;
+}
+
+.S {
+  display: inline-flex;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 60px;
+  color: white;
+  background-color: navy;
+  width: 180px;
+  height: 180px;
+}
+
+.S:hover {
+  background-color: white;
+  color: navy;
+}
+
+.E {
+  display: inline-flex;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 60px;
+  color: white;
+  background-color: navy;
+  width: 180px;
+  height: 180px;
+}
+
+.E:hover {
+  background-color: white;
+  color: navy;
+}
+
+
+
+.one {
+  display: inline-flex;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: yellow;
+  background-color: black;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 120px;
+  border-top: solid yellow;
+  border-left: solid yellow;
+  border-right: solid black;
+  border-bottom: solid yellow;
+  border-width: 10px;
+}
+
+.one:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.eight {
+  display: inline-flex;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: yellow;
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+  text-align: center;
+  border-top: solid yellow;
+  border-right: solid black;
+  border-bottom: solid yellow;
+  border-width: 10px;
+}
+
+.eight:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.three {
+  display: inline-flex;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: yellow;
+  background-color: black;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: solid yellow;
+  border-right: solid yellow;
+  border-bottom: solid yellow;
+  border-width: 10px;
+}
+
+.three:hover {
+  background-color: yellow;
+  color: black;
+}

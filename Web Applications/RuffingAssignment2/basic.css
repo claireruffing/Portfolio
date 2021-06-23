@@ -1,0 +1,83 @@
+/* 
+  CSE183 Assignment 2
+
+  CSS for Basic Requirement 
+*/
+
+.C {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: yellow;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.S {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: yellow;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.E {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: yellow;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.one {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: yellow;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.eight {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: yellow;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.three {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+  font-family: Courier, "Lucida Console", monospace;
+  font-size: 40px;
+  color: black;
+  background-color: yellow;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+}

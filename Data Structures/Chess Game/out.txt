@@ -1,0 +1,18 @@
+Q y
+
+Invalid
+
+q n
+
+-
+r y
+-
+K n
+Invalid
+B y
+-
+K n
+q y
+q n
+p y
+P y

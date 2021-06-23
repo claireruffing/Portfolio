@@ -1,0 +1,24 @@
+#Write a program that takes in two positive integer numbers (N) and (D) and prints out the first N numbers divisible by D. 
+#The final output should be a list of N numbers divisible by D. For example, if you count up from 1, and are given N = 3 and D = 4,
+# then your output list should be [4, 8, 12].
+
+
+#create an empty list and iterate thru the list by appending things to the list
+
+def main():
+    result_list = []
+    n = int(input())   #Number of items in the list
+    d = int(input())   #Number divisible by
+    temp = d
+    
+    while(len(result_list) < n):
+        result_list.append(temp)
+        temp += d
+        
+    print(result_list)
+        
+        
+# Do not modify this code. This makes the unit tests work correctly when main()
+# calls for user input. 
+if __name__ == "__main__":
+    main()

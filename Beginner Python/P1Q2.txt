@@ -1,0 +1,38 @@
+//Write a program that reads an integer (greater than 0) from the console and flips the digits of the number, 
+//using the arithmetic operators // and %, while only printing out the even digits in the flipped order. 
+//Make sure that your program works for any number of digits and that the output does not have a newline character at the end.
+
+
+num = int(input())
+result = str(num)
+evens_result = ' '
+count = 0
+num_of_digits = 0
+num_temp = num
+
+# counting the number of digits in the input string
+if(num > 0):
+    for x in result:
+        floor_num = num_temp // 10
+        count = count + 1
+        if(floor_num == 0):
+            break
+        num_temp = floor_num
+
+while(num > 0):
+    for x in result:
+        num_of_digits = num_of_digits + 1
+        if(num_of_digits > count):
+            break
+        digit = int(x)
+        # checking each digit in the string to see if it is even or not
+        means_even_digit = digit % 2
+        if(means_even_digit == 0):
+            evens = str(digit)
+            # if the digit we are on is even, add it to the resulting string of evens
+            evens_result = evens + evens_result 
+    # stripping the trailing whitespaces off of the output
+    print(evens_result.strip(), end='')    
+    
+    if(num_of_digits == count):
+        break

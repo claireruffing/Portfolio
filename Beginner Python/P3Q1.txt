@@ -1,0 +1,75 @@
+#A certain robot can perform only 4 types of movement. It can move either up or down or left or right. 
+#The movements are represented by ‘U’, ‘D’, ‘L’, ‘R’. Each movement is also associated with the number of steps the robot has taken. 
+#For example: “L 20” mean that the robot has taken 20 steps in the left direction. 
+#Write a function named theRoundTrip that takes all the movements the robot made in a day as input and output True of bool type if 
+#the robot returned to its starting position after its journey. Otherwise, return False. If the input is bad, 
+#print the message “bad input”.
+
+#Input string will be a comma-separated string of movements: "L 20, R 30, U 40" Explanation: This means that the robot has taken 20 steps to the left, 30 steps to the right and 40 steps in the upward direction in that specific order. The output should be: True OR False OR bad input
+#Examples:
+#Input: L 5, R 10, R 10, L 15
+#Output: True
+#Input: L5, U 5
+#Output: False
+#Input: L 5, R 10, P 10, X 2, K 5
+#Output: bad input
+
+
+#spaces = how many spaces to move in the path
+#L, R, U, D = the direction of the path
+def theRoundTrip(my_list):
+    for i in range(len(my_list)):
+        if(my_list[i] == 'L'):
+            spaces = int(my_list[i+1])
+            start[0]= start[0]-spaces
+        elif(my_list[i] == 'R'):
+            spaces = int(my_list[i+1])
+            start[0]= start[0]+spaces
+        elif(my_list[i] == 'U'):
+            spaces = int(my_list[i+1])
+            start[1]= start[1]+spaces
+        elif(my_list[i] == 'D'):
+            spaces = int(my_list[i+1])
+            start[1]= start[1]-spaces
+        i += 2
+    if(start == start_orig):
+        return(True)
+    else:
+        return(False)
+
+
+
+inp = input()  #input
+
+input_list = inp.split(',')
+my_list = []
+
+start = [0, 0]        #starting position we will change throughout code
+start_orig = [0, 0]
+space = ' '
+
+for i in input_list:
+    b = i.split()
+    for j in b:
+        if(j != space):
+            my_list.append(j)
+
+#print(my_list)
+    
+a = 0
+half_len = len(my_list)/2
+counter = 0
+for a in range(len(my_list)):
+    if(a % 2 == 0):
+        if(((my_list[a] == 'L') or (my_list[a] == 'D') or (my_list[a] == 'R') or (my_list[a] == 'U')) and (my_list[a+1].isdigit())):
+            counter += 1
+        else:
+            print('bad input')
+
+if(counter == half_len):
+    if(theRoundTrip(my_list)):
+        print('True')
+    else:
+        print('False')
+
+

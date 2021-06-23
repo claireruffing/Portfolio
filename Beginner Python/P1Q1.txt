@@ -1,0 +1,16 @@
+//Write a “cost of baked goods” calculator. 
+//Ask a user to input three pieces of information: the number of hours baking (a float value), 
+//the cost for having a baker (cost/hour) (a float value), and the cost of the ingredients (a float value). 
+//Output the total cost of the baked goods. The output should be a single floating-point number showing the total cost of baked goods 
+//rounded up to one decimal place (use round(var,1) ).
+
+
+num_hours = float(input())         # number of hours baking
+cost_baker = float(input())        # cost for having a baker (cost/hour)
+cost_ingre = float(input())        # cost of the ingrediants
+
+total_cost = (num_hours * cost_baker) + cost_ingre
+
+total_cost = str(round(total_cost, 2))
+
+print(total_cost)

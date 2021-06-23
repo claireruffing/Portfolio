@@ -1,0 +1,40 @@
+//Write a script that reads in two integers from the user, then prints all the numbers from 1 to 20, with the following exceptions: 
+//If a number is divisible by:
+
+//the first entered integer, print "FIZZ" instead of the number.
+//the second entered integer, print "BUZZ" instead of the number.
+//both the first AND the second integers, print "FIZZBUZZ" instead of the number.
+//For example, if the inputs are 3 and 5, the output should be
+//1 2 FIZZ 4 BUZZ FIZZ 7 8 FIZZ BUZZ 11 FIZZ 13 14 FIZZBUZZ 16 17 FIZZ 19 BUZZ
+
+//Note that each item is separated by a single space character and that the expected output has a trailing space followed by a 
+//newline character.
+
+
+input_1 = int(input())
+input_2 = int(input())
+
+for x in range(21):
+    if((x % input_1 == 0) and (x % input_2 == 0) and (x != 0)):
+        if(x == 20):
+            print('FIZZBUZZ', end=' \n')
+        else:
+            print('FIZZBUZZ', end=' ')
+    elif((x % input_1 == 0) and (x != 0)):
+        if(x == 20):
+            print('FIZZ', end=' \n')
+        else:
+            print('FIZZ', end=' ')
+    elif((x % input_2 == 0) and (x != 0)):
+        if(x == 20):
+            print('BUZZ', end=' \n')
+        else:
+            print('BUZZ', end=' ')
+    elif(x != 0):
+        if(x == 20):
+            print(x, end=' \n')
+        else:
+            print(x, end=' ')
+    else:
+        continue
+    

@@ -1,0 +1,187 @@
+Script started on Fri Apr 17 16:32:49 2020
+psql -h cse180-db-spring.lt.ucsc.edu -U cmruffin
+
+CREATE SCHEMA lab1;
+
+\dn
+  List of schemas
+  Name  |  Owner   
+--------+----------
+ lab1   | cmruffin
+ public | postgres
+ test   | cmruffin
+(3 rows)
+
+ALTER ROLE cmruffin SET SEARCH_PATH TO lab1;
+\q
+psql -h cse180-db-spring.lt.ucsc.edu -U cmruffin
+
+CREATE TABLE Movies (
+  movieid INTEGER,
+  title TEXT,
+  genre TEXT,
+  year INTEGER,
+  director TEXT,
+  CHECK (year >= 1000),
+  PRIMARY KEY (movieid)
+  );
+
+\d Movies
+                 Table "lab1.movies"
+  Column  |  Type   | Collation | Nullable | Default 
+----------+---------+-----------+----------+---------
+ movieid  | integer |           | not null | 
+ title    | text    |           |          | 
+ genre    | text    |           |          | 
+ year     | integer |           |          | 
+ director | text    |           |          | 
+Indexes:
+    "movies_pkey" PRIMARY KEY, btree (movieid)
+Check constraints:
+    "movies_year_check" CHECK (year >= 1000)
+
+CREATE TABLE Actors (
+  actorid INTEGER,
+  name TEXT,
+  gender TEXT,
+  birthyear INTEGER,
+  CHECK (gender IN ('Female', 'Male', 'Non-binary')),
+  CHECK (birthyear >= 1000),
+  PRIMARY KEY (actorid)
+  );
+
+\d Actors
+                 Table "lab1.actors"
+  Column   |  Type   | Collation | Nullable | Default 
+-----------+---------+-----------+----------+---------
+ actorid   | integer |           | not null | 
+ name      | text    |           |          | 
+ gender    | text    |           |          | 
+ birthyear | integer |           |          | 
+Indexes:
+    "actors_pkey" PRIMARY KEY, btree (actorid)
+Check constraints:
+    "actors_birthyear_check" CHECK (birthyear >= 1000)
+    "actors_gender_check" CHECK (gender = ANY (ARRAY['Female'::text, 'Male'::text, 'Non-binary'::text]))
+
+CREATE TABLE MovieRoles (
+  actorid INTEGER,
+  movieid INTEGER,
+  role TEXT, 
+  PRIMARY KEY (actorid, movieid)
+  );
+
+\d MovieRoles
+              Table "lab1.movieroles"
+ Column  |  Type   | Collation | Nullable | Default 
+---------+---------+-----------+----------+---------
+ actorid | integer |           | not null | 
+ movieid | integer |           | not null | 
+ role    | text    |           |          | 
+Indexes:
+    "movieroles_pkey" PRIMARY KEY, btree (actorid, movieid)
+
+CREATE TABLE Reviews (
+  customerid INTEGER,
+  movieid INTEGER,
+  rating FLOAT,
+  review_text CHAR(2000),
+  CHECK (rating BETWEEN 1 AND 10),
+  PRIMARY KEY (customerid, movieid)
+  );
+
+\d Reviews
+                      Table "lab1.reviews"
+   Column    |       Type       | Collation | Nullable | Default 
+-------------+------------------+-----------+----------+---------
+ customerid  | integer          |           | not null | 
+ movieid     | integer          |           | not null | 
+ rating      | double precision |           |          | 
+ review_text | character(2000)  |           |          | 
+Indexes:
+    "reviews_pkey" PRIMARY KEY, btree (customerid, movieid)
+Check constraints:
+    "reviews_rating_check" CHECK (rating >= 1::double precision AND rating <= 10::double precision)
+
+
+CREATE TABLE Imdb (
+  movieid INTEGER  ,
+  imdb_rating FLOAT,
+  imdbid TEXT, 
+  CHECK (imdb_rating BETWEEN 1 AND 10)
+  );
+
+\d Imdb
+                        Table "lab1.imdb"
+   Column    |       Type       | Collation | Nullable | Default 
+-------------+------------------+-----------+----------+---------
+ movieid     | integer          |           |          | 
+ imdb_rating | double precision |           |          | 
+ imdbid      | text             |           |          | 
+Check constraints:
+    "imdb_imdb_rating_check" CHECK (imdb_rating >= 1::double precision AND imdb_rating <= 10::double precision)
+
+
+ALTER TABLE Reviews ADD FOREIGN KEY (movieid) REFERENCES Movies(movieid);
+
+ALTER TABLE Imdb ADD FOREIGN KEY (movieid) REFERENCES Movies(movieid);
+
+ALTER TABLE MovieRoles ADD FOREIGN KEY (movieid) REFERENCES Movies(movieid);
+
+ALTER TABLE MovieRoles ADD FOREIGN KEY (actorid) REFERENCES Actors(actorid);
+
+INSERT INTO Movies(movieid, title, genre, year, director) VALUES (0, 'The Thing', ' Horror, Mystery, Sci-Fi', 1982, 'John Carpenter'), (1, 'The Thing', 'Horror, Mystery, Sci-Fi',  2011, 'Matthijs van Heijningen Jr.'), (2, '1917', 'Drama, War', 2019, 'Sam Mendes'), (3, 'Jur assic Park', 'Action, Adventure, Sci-Fi', 1993, 'Steven Spielberg'), (4, 'Alien', 'Horror, Sci -Fi', 1979, 'Ridley Scott'), (5, 'The Terminator', 'Action, Sci-Fi', 1984, 'James Cameron'), ( 6, 'Ghostbusters', 'Action, Comedy, Fantasy', 1984, 'Ivan Reitman'),(7, 'Zombieland', 'Adventu re, Comedy, Horror', 2009, 'Ruben Fleischer'),(8, 'Sherlock Holmes: A Game of Shadows', 'Actio n, Adventure, Crime', 2011, 'Guy Ritchie'),(9, 'Superbad', 'Comedy', 2007, 'Greg Mottola');
+
+
+INSERT INTO Actors(actorid, name, gender, birthyear) VALUES (0, 'Kurt Russell', 'Male', 1951), (1, 'Sigourney Weaver', 'Fem ale', 1949), (2, 'Linda Hamilton', 'Female', 1956), (3, 'Michael Biehn', 'Male', 1956), (4, 'Arnold Schwarzenegger', 'Male', 1947), (5, 'Bill Murray', 'Male', 1950), (6, 'Jesse Eisenberg', 'Male', 1983), (7, 'Emma Stone', 'Female', 1988), (8, 'Woody Harrelson', 'Male', 1961), (9, 'Natalie Portman', 'Female', 1981), (10, 'Rachel McAdams', 'Female', 1978), (11, 'Jonah Hill', 'Male', 1983), (12, 'Jude Law', 'Male', 1972), (13, 'Mary Elizabeth Winstead', 'Female', 1984);
+
+
+TABLE Actors;
+ actorid |          name           | gender | birthyear 
+---------+-------------------------+--------+-----------
+       0 | Kurt Russell            | Male   |      1951
+       1 | Sigourney Weaver        | Female |      1949
+       2 | Linda Hamilton          | Female |      1956
+       3 | Michael Biehn           | Male   |      1956
+       4 | Arnold Schwarzenegger   | Male   |      1947
+       5 | Bill Murray             | Male   |      1950
+       6 | Jesse Eisenberg         | Male   |      1983
+       7 | Emma Stone              | Female |      1988
+       8 | Woody Harrelson         | Male   |      1961
+       9 | Natalie Portman         | Female |      1981
+      10 | Rachel McAdams          | Female |      1978
+      11 | Jonah Hill              | Male   |      1983
+      12 | Jude Law                | Male   |      1972
+      13 | Mary Elizabeth Winstead | Female |      1984
+(14 rows)
+
+
+INSERT INTO MovieRoles(actorid, movieid, role) VALUES (0, 0, 'MacReady'), (13, 1, 'Kate Lloyd'), (5, 6, 'Dr. Peter Venkman' ), (5, 7, 'Bill Murray'), (12, 8, 'Dr. John Watson'), (10, 8, 'Irene Adler'), (7, 9, 'Jules'), (1, 4, 'Ripley'), (2, 5, 'Sarah Connor'), (3, 5, 'Kyle Reese'), (4, 5, 'Terminator');
+
+
+
+INSERT INTO Imdb(movieid, imdb_rating, imdbid) VALUES (0, 8.1, 'tt0084787'), (1, 6.2, 'tt0905372'), (2, 8.4,  'tt8579674'), (3, 8.1, 'tt0107290'), (4, 8.4, 'tt0078748'), (5, 8, 'tt0088247'), (6, 7.8, 'tt0087332'), (7, 7.6, 'tt1156 398'), (8, 7.5, 'tt1515091'), (9, 7.6, 'tt0829482');
+
+\copy Reviews FROM /afs/cats.ucsc.edu/users/v/cmruffin/CSE180/Reviews.csv CSV HEADER
+
+
+
+TABLE Imdb;
+ movieid | imdb_rating |  imdbid   
+---------+-------------+-----------
+       0 |         8.1 | tt0084787
+       1 |         6.2 | tt0905372
+       2 |         8.4 | tt8579674
+       3 |         8.1 | tt0107290
+       4 |         8.4 | tt0078748
+       5 |           8 | tt0088247
+       6 |         7.8 | tt0087332
+       7 |         7.6 | tt1156398
+       8 |         7.5 | tt1515091
+       9 |         7.6 | tt0829482
+(10 rows)
+
+cmruffin=> \q
+bash-4.2$ \ exit
+
+Script done on Fri Apr 17 20:22:24 2020

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 import { Link } from "react-router-dom";
+import image from "../projectpage.jpg";
 
 export default function Post() {
   const [postData, setPost] = useState(null);
@@ -14,13 +15,12 @@ export default function Post() {
         `*[_type == "post"]{
                 title,
                 slug,
-                mainImage{
-                    asset->{
-                        _id,
-                        url
-                    },
-                    alt
-                }
+                date,
+                place,
+                description,
+                projectType,
+                link,
+                tags
             }`
       )
       .then((data) => setPost(data))
@@ -28,36 +28,64 @@ export default function Post() {
   }, []);
 
   return (
-    <main className="bg-green-100 min-h-screen p-12">
-      <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">Resume Page!</h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my page of work experience and skills
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {postData &&
-            postData.map((post, index) => (
-              <article>
-                <Link to={"/post/" + post.slug.current} key={post.slug.current}>
-                  <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
-                    key={index}
-                  >
-                    <img
-                      src={post.mainImage.asset.url}
-                      alt={post.mainImage.alt}
-                      className="w-full h-full rounded-r object-cover absolute"
-                    ></img>
-                    <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-gray-800 text-lg font-blog px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">
+    <main className="min-h-screen">
+      <img
+        src={image}
+        alt="background photo"
+        className="absolute object-cover"
+      ></img>
+      <section className="container mx-auto p-12">
+        <section className="relative flex justify-center min-h-screen">
+          <div className="text-lg flex flex-col justify-center">
+            <h1 className="text-5xl flex justify-center cursive leading-none lg:leading-snug">
+              My Projects
+            </h1>
+            <h2 className="text-lg text-gray-800 flex justify-center mb-12 leading-none lg:leading-snug">
+              Fullstack Web Applications
+            </h2>
+            <section className="grid grid-cols-2 gap-8">
+              {postData &&
+                postData.map((post, index) => (
+                  <article className="relative rounded-lg shadow-xl creamBG p-10">
+                    <Link
+                      to={"/post/" + post.slug.current}
+                      key={post.slug.current}
+                    >
+                      <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                         {post.title}
                       </h3>
-                    </span>
-                  </span>
-                </Link>
-              </article>
-            ))}
-        </div>
+                      <div className="text-gray-500 text-xs space-x-4">
+                        <span>
+                          <strong className="font-bold">Finished on</strong>:{" "}
+                          {new Date(post.date).toLocaleDateString()}
+                        </span>
+                        <span>
+                          <strong className="font-bold">Company</strong>:{" "}
+                          {post.place}
+                        </span>
+                        <span>
+                          <strong className="font-bold">Type</strong>:{" "}
+                          {post.projectType}
+                        </span>
+                        <p className="my-6 text-lg text-gray-700 leading-relax">
+                          {post.description}
+                        </p>
+                        <a
+                          href={post.link}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
+                        >
+                          View The Project{" "}
+                          <span role="img" aria-label="right pointer"></span>
+                        </a>
+                      </div>
+                    </Link>
+                  </article>
+                ))}
+            </section>
+          </div>
+        </section>
       </section>
     </main>
   );

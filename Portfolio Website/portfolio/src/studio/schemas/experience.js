@@ -1,8 +1,7 @@
-
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  name: "project",
-  title: "Project",
+  name: "experience",
+  title: "Experience",
   type: "document",
   fields: [
     {
@@ -11,31 +10,20 @@ export default {
     },
     {
       name: "date",
-      type: "datetime",
-    },
-    {
-      name: "place",
       type: "string",
     },
     {
-      name: "description",
-      type: "text",
-    },
-    {
-      name: "projectType",
-      title: "Project type",
+      name: "company",
       type: "string",
-      options: {
-        list: [
-          { value: "personal", title: "Personal" },
-          { value: "client", title: "Client" },
-          { value: "school", title: "School" },
-        ],
-      },
     },
     {
-      name: "link",
-      type: "url",
+      name: "location",
+      type: "string",
+    },
+    {
+      name: "body",
+      title: "Body",
+      type: "blockContent",
     },
     {
       name: "tags",

@@ -8,3 +8,136 @@
     color: #00b3b3;
 }
 
+.darkBlue {
+    color: #31708E
+}
+
+.midBlue {
+    color: #5085A5
+}
+
+.lightBlue {
+    color: #8FC1E3
+}
+
+.cream {
+    color: #F7F9FB
+}
+
+.darkGreen {
+    color: #687864
+}
+
+.darkGreenBG {
+    background-color: #687864
+}
+
+.midBlueBG {
+    background-color: #5085A5
+}
+
+.creamBG {
+    background-color: #F7F9FB
+}
+
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #8FC1E3;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+.htmlcss {
+    width: 90%;
+}
+
+.git {
+    width: 80%;
+}
+
+.python {
+    width: 75%;
+}
+
+.js {
+    width: 65%;
+}
+
+.java {
+    width: 60%;
+}
+
+.php {
+    width: 30%;
+}
+
+.postgresql {
+    width: 65%;
+}
+
+.mysql {
+    width: 20%;
+}
+
+.jira {
+    width: 40%;
+}
+
+.trello {
+    width: 90%;
+}
+
+.react {
+    width: 65%;
+}
+
+.node {
+    width: 65%;
+}
+
+.servicenow {
+    width: 75%;
+}
+
+.jenkins {
+    width: 40%;
+}
+
+.drupal {
+    width: 40%;
+}
+
+.materialui {
+    width: 60%;
+}
+
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.circleBG {
+    r: 70;
+    cx: 100;
+    cy: 100;
+    fill: transparent;
+    stroke: lightgrey;
+    stroke-width: 2rem;
+    stroke-dasharray: 439.8;
+    stroke-dashoffset: 0;
+}
+
+.circleInside {
+    r: 70;
+    cx: 100;
+    cy: 100;
+    fill: transparent;
+    stroke: #8FC1E3;
+    stroke-width: 2rem;
+    stroke-dasharray: 439.8;
+    stroke-dashoffset: 66;
+}

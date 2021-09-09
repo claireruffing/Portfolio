@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import project from "../studio/schemas/project.js";
+import project from "../studio/schemas/experience.js";
 import sanityClient from "../client.js";
 
 export default function Project() {
@@ -26,11 +26,11 @@ export default function Project() {
 
   // title of project is h3, everything in div is about the project like type, date, etc
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main className="midBlueBG min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
+        <h1 className="text-5xl flex justify-center cursive">My Experience</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my projects page!
+          Courses and Work Experience
         </h2>
         <section className="grid grid-cols-2 gap-8">
           {projectData &&

@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import image from "../homepage.jpg";
+import imageUrlBuilder from "@sanity/image-url";
+import sanityClient from "../client.js";
+
+// building blocks for our urlFor for our image
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
 
 export default function Home() {
+  const [author, setAuthor] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "author"]{
+            name,
+            bio,
+            "authorImage": image.asset->url
+        }`
+      )
+      .then((data) => setAuthor(data[0]))
+      .catch(console.error);
+  }, []);
+
+  // If there is no author, we will return a div that says Loading...
+  if (!author) return <div>Loading...</div>;
+
   return (
     <main>
       <img
@@ -21,6 +47,11 @@ export default function Home() {
           <h4 className="text-4xl darkBlue font-bold cursive leading-none lg:leading-snug">
             I design and develop software to meet user's needs.
           </h4>
+          {/* <img
+            src={urlFor(author.authorImage).url()}
+            className="rounded w-48 h-48 mr-8"
+            alt={author.name}
+          ></img> */}
         </div>
       </section>
     </main>

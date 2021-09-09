@@ -21,14 +21,21 @@ export default function NavBar() {
             activeClassName="navbarTextColor"
             className="inflex-flex items-center py-3 px-3 my-6 rounded hover:underline font-bold"
           >
-            Resume
+            Projects
           </NavLink>
           <NavLink
-            to="/project"
+            to="/experience"
             activeClassName="navbarTextColor"
             className="inflex-flex items-center py-3 px-3 my-6 rounded hover:underline font-bold"
           >
-            Projects
+            Experience
+          </NavLink>
+          <NavLink
+            to="/skills"
+            activeClassName="navbarTextColor"
+            className="inflex-flex items-center py-3 px-3 my-6 rounded hover:underline font-bold"
+          >
+            Skills
           </NavLink>
           <NavLink
             to="/about"

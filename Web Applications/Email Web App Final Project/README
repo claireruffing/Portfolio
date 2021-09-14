@@ -23,3 +23,5 @@ To reset Docker (if you run into problems with database)
 
   $ docker stop $(docker ps -aq)
   $ docker rm $(docker ps -aq)
+  
+This is a desktop and mobile app. To view it as if you were on your phone, right click the page, click Inspect, and click the mobile view.

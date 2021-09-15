@@ -18,7 +18,7 @@ export default function Skills() {
           </h2>
           <section className="grid grid-cols-4 gap-4">
             <div>
-              <h4 className="relative flex justify-center pr-10">
+              <h4 className="relative flex justify-center pr-24">
                 HTML and CSS
               </h4>
               <svg width="200" height="200">
@@ -37,24 +37,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-10">JavaScript</p>
-              <svg width="200" height="200">
-                <g transform="rotate(-90 100 100)">
-                  <circle className="circleBG"></circle>
-                  <circle className="circleInside"></circle>
-                </g>
-                <text
-                  x="50%"
-                  y="50%"
-                  dominant-baseline="central"
-                  text-anchor="middle"
-                >
-                  60%
-                </text>
-              </svg>
-            </div>
-            <div>
-              <p className="relative flex justify-center pr-10">Python</p>
+              <p className="relative flex justify-center pr-24">Python</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -71,7 +54,75 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-10">Git</p>
+              <p className="relative flex justify-center pr-24">JavaScript</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  60%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">Java</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  55%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">PHP</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  30%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">C</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  40%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">Git</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -88,7 +139,179 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-10">Java</p>
+              <p className="relative flex justify-center pr-24">PostgreSQL</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  65%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">React</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  65%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">Node.js</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  65%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">Trello</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  90%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">Jira</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  40%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">Drupal</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  40%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">ServiceNow</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  80%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">Tailwind CSS</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  55%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">Jenkins</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  35%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">MaterialUI</p>
+              <svg width="200" height="200">
+                <g transform="rotate(-90 100 100)">
+                  <circle className="circleBG"></circle>
+                  <circle className="circleInside"></circle>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominant-baseline="central"
+                  text-anchor="middle"
+                >
+                  60%
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p className="relative flex justify-center pr-24">
+                Sanity Studio
+              </p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>

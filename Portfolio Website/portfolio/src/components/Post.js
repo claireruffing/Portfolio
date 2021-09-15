@@ -16,7 +16,6 @@ export default function Post() {
                 title,
                 slug,
                 date,
-                place,
                 description,
                 projectType,
                 link,
@@ -60,10 +59,6 @@ export default function Post() {
                           {new Date(post.date).toLocaleDateString()}
                         </span>
                         <span>
-                          <strong className="font-bold">Company</strong>:{" "}
-                          {post.place}
-                        </span>
-                        <span>
                           <strong className="font-bold">Type</strong>:{" "}
                           {post.projectType}
                         </span>
@@ -74,7 +69,7 @@ export default function Post() {
                           href={post.link}
                           rel="noopener noreferrer"
                           target="_blank"
-                          className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
+                          className="darkBlue font-bold hover:underline hover:lightBlue text-xl"
                         >
                           View The Project{" "}
                           <span role="img" aria-label="right pointer"></span>

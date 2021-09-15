@@ -36,10 +36,6 @@ export default {
       type: "datetime",
     },
     {
-      name: "place",
-      type: "string",
-    },
-    {
       name: "projectType",
       title: "Project type",
       type: "string",

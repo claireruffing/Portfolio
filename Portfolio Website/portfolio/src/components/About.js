@@ -13,6 +13,8 @@ function urlFor(source) {
 export default function About() {
   const [author, setAuthor] = useState(null);
 
+  // In the quotes in .fetch, we are writing SQL using Groc which is Sanity's SQL
+  // Cheatsheet for Groc SQL at https://www.sanity.io/docs/query-cheat-sheet
   useEffect(() => {
     sanityClient
       .fetch(

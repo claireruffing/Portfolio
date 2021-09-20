@@ -15,6 +15,8 @@ export default function SinglePost() {
   const [singlePost, setSinglePost] = useState(null);
   const { slug } = useParams();
 
+  // In the quotes in .fetch, we are writing SQL using Groc which is Sanity's SQL
+  // Cheatsheet for Groc SQL at https://www.sanity.io/docs/query-cheat-sheet
   // name and authorImage are alias names for the image
   useEffect(() => {
     sanityClient

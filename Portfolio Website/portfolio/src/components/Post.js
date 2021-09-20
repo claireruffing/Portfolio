@@ -7,6 +7,7 @@ export default function Post() {
   const [postData, setPost] = useState(null);
 
   // In the quotes in .fetch, we are writing SQL using Groc which is Sanity's SQL
+  // Cheatsheet for Groc SQL at https://www.sanity.io/docs/query-cheat-sheet
   useEffect(() => {
     //   fetching all types that are post and grabbing the title, slug, mainImage, and alt of it
     // this post is the post that is on sanity
@@ -30,7 +31,7 @@ export default function Post() {
     <main className="min-h-screen">
       <img
         src={image}
-        alt="background photo"
+        alt="background"
         className="absolute object-cover"
       ></img>
       <section className="container mx-auto p-12">

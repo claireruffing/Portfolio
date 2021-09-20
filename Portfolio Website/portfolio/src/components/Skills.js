@@ -7,7 +7,7 @@ export default function Skills() {
     <main className="min-h-screen">
       <img
         src={image}
-        alt="background photo"
+        alt="background"
         className="absolute object-cover"
       ></img>
       <section className="relative justify-center min-h-screen p-12">

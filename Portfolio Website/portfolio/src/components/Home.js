@@ -6,7 +6,7 @@ export default function Home() {
     <main>
       <img
         src={image}
-        alt="background photo"
+        alt="background"
         className="absolute object-cover w-full h-full"
       ></img>
       {/* <div style="background-image: url('../../images/image.png')"></div> */}

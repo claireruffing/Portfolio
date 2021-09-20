@@ -1,4 +1,0 @@
-foo - command not echoed
-bar - command not echoed
-echo all - command 'IS' echoed
-all - command IS echoed

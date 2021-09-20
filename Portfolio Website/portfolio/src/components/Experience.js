@@ -7,6 +7,8 @@ import BlockContent from "@sanity/block-content-to-react";
 export default function Experience() {
   const [experienceData, setExperienceData] = useState(null);
 
+  // In the quotes in .fetch, we are writing SQL using Groc which is Sanity's SQL
+  // Cheatsheet for Groc SQL at https://www.sanity.io/docs/query-cheat-sheet
   // Fetching all types that are equal to project
   useEffect(() => {
     sanityClient
@@ -30,7 +32,7 @@ export default function Experience() {
     <main className="min-h-screen">
       <img
         src={image}
-        alt="background photo"
+        alt="background"
         className="absolute object-cover"
       ></img>
       <section className="container mx-auto p-12">

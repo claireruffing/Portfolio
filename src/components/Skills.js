@@ -12,11 +12,9 @@ export default function Skills() {
           <h2 className="text-lg flex justify-center mb-12">
             Intermediate Level Range
           </h2>
-          <section className="grid grid-cols-4 gap-4">
+          <section className="grid grid-cols-4 gap-12">
             <div>
-              <h4 className="relative flex justify-center pr-12">
-                HTML and CSS
-              </h4>
+              <p className="relative pl-10">HTML and CSS</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -33,7 +31,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Python</p>
+              <p className="relative pl-16">Python</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -50,7 +48,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">JavaScript</p>
+              <p className="relative pl-14">JavaScript</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -67,7 +65,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Java</p>
+              <p className="relative pl-16">Java</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -84,7 +82,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">PHP</p>
+              <p className="relative pl-16">PHP</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -101,7 +99,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">C</p>
+              <p className="relative pl-24">C</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -118,7 +116,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Git</p>
+              <p className="relative pl-16">Git</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -135,7 +133,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">PostgreSQL</p>
+              <p className="relative pl-16">PostgreSQL</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -152,7 +150,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">React</p>
+              <p className="relative pl-16">React</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -169,7 +167,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Node.js</p>
+              <p className="relative pl-16">Node.js</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -186,7 +184,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Trello</p>
+              <p className="relative pl-16">Trello</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -203,7 +201,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Jira</p>
+              <p className="relative pl-16">Jira</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -220,7 +218,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Drupal</p>
+              <p className="relative pl-16">Drupal</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -237,7 +235,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">ServiceNow</p>
+              <p className="relative pl-16">ServiceNow</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -254,7 +252,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Tailwind CSS</p>
+              <p className="relative pl-16">Tailwind CSS</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -271,7 +269,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">Jenkins</p>
+              <p className="relative pl-16">Jenkins</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -288,7 +286,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">MaterialUI</p>
+              <p className="relative pl-16">MaterialUI</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>
@@ -305,9 +303,7 @@ export default function Skills() {
               </svg>
             </div>
             <div>
-              <p className="relative flex justify-center pr-12">
-                Sanity Studio
-              </p>
+              <p className="relative pl-16">Sanity Studio</p>
               <svg width="200" height="200">
                 <g transform="rotate(-90 100 100)">
                   <circle className="circleBG"></circle>

@@ -1,6 +1,11 @@
 # Link to Portfolio Site
 
 The link to the hosted site is at https://www.claireruffingportfolio.com/ 
+The site is hosted on AWS Amplify.
+
+## Amazon Web Services
+
+The frontend code is continuously deployed whenever a commit is pushed to the this repo via AWS amplify (<https://aws.amazon.com/amplify/>).
 
 # Getting Started with Create React App
 

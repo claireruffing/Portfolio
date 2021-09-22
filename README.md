@@ -1,7 +1,6 @@
 # Link to Portfolio Site
 
-The link to the hosted site is at https://www.claireruffingportfolio.com/ 
-The site is hosted on AWS Amplify.
+The link to the hosted site is at https://www.claireruffingportfolio.com/ and is hosted on AWS Amplify.
 
 ## Amazon Web Services
 

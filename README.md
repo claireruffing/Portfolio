@@ -3,22 +3,11 @@
 To create a Portfolio showcasing my projects, skills, and experience. This is a Single Page Web App using React.js, Tailwind CSS, Sanity Studio, and Groc SQL, which is Sanity's SQL. I incorporated Sanity Studio to make it easier for me to manage the content of my portfolio. This site is hosted on AWS and automatically deploys whenever I push a new change to my Github repo. Sanity Studio also automatically deploys whenever I make a change on there. 
 
 The link to the hosted site is at https://www.claireruffingportfolio.com/ and is hosted on AWS Amplify.
+More information about tihs project is at https://www.claireruffingportfolio.com/post/portfolio-site
 
 ## Key Technologies
 
 Frontend: React.js, Sanity Studio, Tailwind CSS, and AWS Amplify
-
-## Principal Operations
-
-For the pages Projects, Experience, and About Me on my site, there is an associated schema that contains the fields for each post I make in Sanity Studio. 
-
-Projects Page: Each card you see on the projects page is an individual post that contains data following its schema. The fields in the schema consist of the title of the project, the date I finished it, the type, description, and a link to a new page with more information. When clicking on an individual card, you will be directed to a new page that has the title, author, and a bio consisting of the goal, key technologies, and principal operations.
-
-Experience Page: Each card you see on the experience page is an individual post that contains data following its schema. The fields in the schema consist of the title of the position, the date I started to date I finished, the company, the location, and a description. 
-
-About Me Page: The fields in the schema consist of information about the author of the site including the name, unique key, image, and bio.
-
-Skills Page: Progress bars represent how good I am at the following programming languages and software tools I have gained experience in from school, work, and personal studying. The percents represent my skill at an intermediate level, not an expert level. 
 
 ## Amazon Web Services
 
@@ -75,26 +64,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Preview 

@@ -1,10 +1,8 @@
 # Portfolio Website
 
-The link to the hosted site is at https://www.claireruffingportfolio.com/ and is hosted on AWS Amplify.
-
-## Goal 
-
 To create a Portfolio showcasing my projects, skills, and experience. This is a Single Page Web App using React.js, Tailwind CSS, Sanity Studio, and Groc SQL, which is Sanity's SQL. I incorporated Sanity Studio to make it easier for me to manage the content of my portfolio. This site is hosted on AWS and automatically deploys whenever I push a new change to my Github repo. Sanity Studio also automatically deploys whenever I make a change on there. 
+
+The link to the hosted site is at https://www.claireruffingportfolio.com/ and is hosted on AWS Amplify.
 
 ## Key Technologies
 

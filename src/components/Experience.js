@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import experience from "../studio/schemas/experience.js";
 import sanityClient from "../client.js";
 import image from "../expage.jpg";
 import BlockContent from "@sanity/block-content-to-react";
@@ -9,7 +8,7 @@ export default function Experience() {
 
   // In the quotes in .fetch, we are writing SQL using Groc which is Sanity's SQL
   // Cheatsheet for Groc SQL at https://www.sanity.io/docs/query-cheat-sheet
-  // Fetching all types that are equal to project
+  // Fetching all types that are equal to experience
   useEffect(() => {
     sanityClient
       .fetch(
@@ -27,7 +26,7 @@ export default function Experience() {
     // then statement is getting the data and then setting the project data
   }, []); //we want it to run just once
 
-  // title of project is h3, everything in div is about the project like type, date, etc
+  // title of work experience is h3, everything in div is about the work experience like type, date, etc
   return (
     <main className="min-h-screen">
       <img

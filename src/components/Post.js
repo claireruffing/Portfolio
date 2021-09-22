@@ -29,11 +29,7 @@ export default function Post() {
 
   return (
     <main className="min-h-screen">
-      <img
-        src={image}
-        alt="background"
-        className="absolute object-cover"
-      ></img>
+      <img src={image} alt="background" className="absolute object-cover"></img>
       <section className="container mx-auto p-12">
         <section className="relative flex justify-center min-h-screen">
           <div className="text-lg flex flex-col justify-center">

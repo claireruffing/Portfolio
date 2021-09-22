@@ -66,7 +66,7 @@ export default function Post() {
                           href={post.link}
                           rel="noopener noreferrer"
                           target="_blank"
-                          className="darkBlue font-bold hover:underline hover:lightBlue text-xl"
+                          className="darkBlue font-bold underline hover:text-red-600 text-xl"
                         >
                           View The Project{" "}
                           <span role="img" aria-label="right pointer"></span>

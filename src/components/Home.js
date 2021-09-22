@@ -16,7 +16,7 @@ export default function Home() {
             I'm Claire
           </h1>
           <h4 className="text-4xl darkBlue font-bold cursive leading-none lg:leading-snug">
-            I am a <i>Fullstack Software Developer. </i>
+            I am a <i>Software Developer. </i>
           </h4>
           <h4 className="text-4xl darkBlue font-bold cursive leading-none lg:leading-snug">
             I design and develop software to meet user's needs.

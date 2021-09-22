@@ -20,7 +20,7 @@ Experience Page: Each card you see on the experience page is an individual post 
 
 About Me Page: The fields in the schema consist of information about the author of the site including the name, unique key, image, and bio.
 
-The rest of the pages and features of my site are self-explanatory.
+Skills Page: Progress bars represent how good I am at the following programming languages and software tools I have gained experience in from school, work, and personal studying. The percents represent my skill at an intermediate level, not an expert level. 
 
 ## Amazon Web Services
 

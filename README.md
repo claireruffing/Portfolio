@@ -1,3 +1,5 @@
+# Link to Portfolio Site
+
 The link to the hosted site is at https://www.claireruffingportfolio.com/ 
 
 # Getting Started with Create React App

@@ -48,7 +48,7 @@ export default function NavBar() {
         <div className="inline-flex py-3 px-3 my-6">
           {/* mr-4 is margin right of 4  _blank is to open a blank new page */}
           <SocialIcon
-            url="https://github.com/claireruffing/Projects"
+            url="https://github.com/claireruffing"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
